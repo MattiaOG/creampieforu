@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monikas Produkte - Einkaufswagen</title>
+    <style>
+        body {
+            background-color: #f7f7fc;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .about-monika {
+            width: 90%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-monika h2 {
+            font-size: 1.8em;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .about-monika p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .products-container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .product-item:last-child {
+            border-bottom: none;
+        }
+
+        .product-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .product-details {
+            text-align: left;
+        }
+
+        .product-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-size: 1em;
+            color: #777;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-selector input {
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .checkout-summary {
+            text-align: right;
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .checkout-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .checkout-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        .checkout-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="about-monika">
+        <h2>Über Monika</h2>
+        <p>
+            Monika ist eine leidenschaftliche Künstlerin und Handwerkerin, die mit viel Liebe zum Detail einzigartige Produkte kreiert und befriedigende Dienstleistungen liefert.
+            Von hangemachter Milch bis hin zu frisch ausgepresstem Mösensaft – jedes ihrer Angebote erzählt eine kleine Geschichte.
+            Ihre Kreativität inspiriert viele, und sie liebt es, ihre Leidenschaft mit der Welt zu teilen.
+        </p>
+    </div>
+
+    <div class="products-container">
+        <h1>Monikas Produkte</h1>
+        <div class="product-item">
+            <div class="product-info">
+                <img src="C:\Users\matti\OneDrive\Desktop\Testwebseite\Monika\Bilder\monika 111.png" alt="Produkt 1">
+                <div class="product-details">
+                    <div class="product-name">Knackige und cremige Nacktbilder!</div>
+                    <div class="product-price">€15.00</div>
+                </div>
+            </div>
+            <div class="quantity-selector">
+                <input type="number" min="0" value="0" class="product-quantity" data-price="15">
+                <span>Stück</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-info">
+                <img src="https://via.placeholder.com/80" alt="Produkt 2">
+                <div class="product-details">
+                    <div class="product-name">Tasse</div>
+                    <div class="product-price">€10.00</div>
+                </div>
+            </div>
+            <div class="quantity-selector">
+                <input type="number" min="0" value="0" class="product-quantity" data-price="10">
+                <span>Stück</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-info">
+                <img src="https://via.placeholder.com/80" alt="Produkt 3">
+                <div class="product-details">
+                    <div class="product-name">Handgemachtes Armband</div>
+                    <div class="product-price">€25.00</div>
+                </div>
+            </div>
+            <div class="quantity-selector">
+                <input type="number" min="0" value="0" class="product-quantity" data-price="25">
+                <span>Stück</span>
+            </div>
+        </div>
+        <div class="checkout-summary">
+            Gesamt: €<span id="total-price">0.00</span>
+        </div>
+        <a href="https://voegeli09.github.io/standort-website/" class="checkout-button">Zur Kasse gehen</a>
+    </div>
+
+    <script>
+        const productQuantities = document.querySelectorAll('.product-quantity');
+        const totalPriceElement = document.getElementById('total-price');
+
+        productQuantities.forEach(input => {
+            input.addEventListener('input', updateTotalPrice);
+        });
+
+        function updateTotalPrice() {
+            let total = 0;
+            productQuantities.forEach(input => {
+                const quantity = parseInt(input.value) || 0;
+                const price = parseFloat(input.getAttribute('data-price'));
+                total += quantity * price;
+            });
+            totalPriceElement.textContent = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>

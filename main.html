@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finden Sie spannende Bekanntschaften in Ihrer Nähe</title>
+    <style>
+        body {
+            background-color: #f7f7fc;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .container:hover {
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .clickbait-button {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            font-size: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .clickbait-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .clickbait-button:active {
+            transform: scale(0.97);
+        }
+
+        .clickbait-button img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .clickbait-button img:hover {
+            transform: rotate(5deg);
+        }
+
+        .clickbait-button .text {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .gallery {
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .gallery h2 {
+            font-size: 1.8em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            justify-items: center;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item .name {
+            font-size: 1em;
+            color: #333;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        .gallery-item .age {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .clickbait-button {
+                flex-direction: column;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .clickbait-button img {
+                margin: 0 0 10px 0;
+                width: 50px;
+                height: 50px;
+            }
+
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Finden Sie spannende Bekanntschaften in Ihrer Nähe!</h1>
+        <p>Entdecken Sie interessante Menschen nur wenige Meter entfernt. Klicken Sie auf einen der folgenden Personen, wenn Sie mehr erfahren möchten.</p>
+
+<h1>Unsere Topseller:</h1>
+        <div class="button-container">
+            <a href="C:\Users\matti\OneDrive\Desktop\Testwebseite\Monika\monika.html" class="clickbait-button">
+                <img src="C:\Users\matti\OneDrive\Desktop\Testwebseite\Monika\Bilder\monika.png" alt="Monika">
+                <span class="text">Monika, 33, nur 100 Meter von Ihnen entfernt</span>
+            </a>
+            <a href="https://example.com" class="clickbait-button">
+                <img src="https://via.placeholder.com/60" alt="Tanja">
+                <span class="text">Tanja, 28, möchte Sie kennenlernen</span>
+            </a>
+            <a href="https://example.com" class="clickbait-button">
+                <img src="https://via.placeholder.com/60" alt="Markus">
+                <span class="text">Markus, 35, hat Ihnen eine Nachricht geschickt</span>
+            </a>
+            <a href="https://example.com" class="clickbait-button">
+                <img src="https://via.placeholder.com/60" alt="Lisa">
+                <span class="text">Lisa, 30, ist gerade online</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <h2>Unsere Personen zum Kennenlernen</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 1">
+                <div class="name">Anna</div>
+                <div class="age">24 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 2">
+                <div class="name">Ben</div>
+                <div class="age">29 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 3">
+                <div class="name">Clara</div>
+                <div class="age">22 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 4">
+                <div class="name">David</div>
+                <div class="age">27 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 5">
+                <div class="name">Eva</div>
+                <div class="age">30 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 6">
+                <div class="name">Felix</div>
+                <div class="age">26 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 7">
+                <div class="name">Gina</div>
+                <div class="age">23 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 8">
+                <div class="name">Hans</div>
+                <div class="age">28 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 9">
+                <div class="name">Isabella</div>
+                <div class="age">25 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 10">
+                <div class="name">Jonas</div>
+                <div class="age">27 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 11">
+                <div class="name">Klara</div>
+                <div class="age">31 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 12">
+                <div class="name">Lukas</div>
+                <div class="age">29 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 13">
+                <div class="name">Mia</div>
+                <div class="age">24 Jahre</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/100" alt="Person 14">
+                <div class="name">Nina</div>
+                <div class="age">28 Jahre</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
